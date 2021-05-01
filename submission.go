@@ -35,6 +35,7 @@ type Submission struct {
 	IsSaved       bool    `json:"saved"`
 	BannedBy      *string `json:"banned_by"`
 	LinkFlairText string  `json:"link_flair_text"`
+	AuthorFlairText string  `json:"author_flair_text"`
 }
 
 func (h Submission) voteID() string   { return h.FullID }
